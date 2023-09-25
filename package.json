@@ -20,7 +20,8 @@
     "test:e2e": "jest --config ./apps/emp-manage/test/jest-e2e.json"
   },
   "dependencies": {
-    "@aws-sdk/client-dynamodb": "^3.408.0",
+    "@aws-sdk/client-dynamodb": "^3.418.0",
+    "@aws-sdk/lib-dynamodb": "^3.418.0",
     "@nest-dynamodb/typedorm": "^1.1.0",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.0.1",
@@ -30,6 +31,8 @@
     "@nestjs/platform-express": "^10.0.0",
     "@nestjs/swagger": "^7.1.10",
     "@nestjs/typeorm": "^10.0.0",
+    "@typedorm/common": "^1.15.4",
+    "@typedorm/core": "^1.15.4",
     "aws-sdk": "^2.1453.0",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",

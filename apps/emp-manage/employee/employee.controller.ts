@@ -8,6 +8,7 @@ import {
   ApiTags,
 } from '@nestjs/swagger';
 import { Employee } from './entities/employee.entity';
+import { Organisation } from '../models/employee.model';
 
 @ApiBearerAuth()
 @ApiTags('employee')
@@ -20,7 +21,7 @@ export class EmployeeController {
   @ApiResponse({ status: 201, description: 'Employee Model', type: Employee })
   async create(
     @Body() createEmployeeDto: CreateEmployeeDto,
-  ): Promise<Employee> {
+  ): Promise<Organisation> {
     return this.employeeService.create(createEmployeeDto);
   }
 
